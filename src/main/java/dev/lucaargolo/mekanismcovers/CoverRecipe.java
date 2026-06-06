@@ -75,7 +75,6 @@ public class CoverRecipe extends SpecialRecipe {
                     isCleanOperation = isCleanOperation || (stack.hasTag() && Objects.requireNonNull(stack.getTag()).contains("CoverBlockItem"));
                 } else if (item instanceof BlockItem) {
                     Block b = ((BlockItem) item).getBlock();
-                    // Также проверяем здесь
                     if (!b.hasTileEntity(b.defaultBlockState())) {
                         block = b;
                     }
@@ -108,9 +107,9 @@ public class CoverRecipe extends SpecialRecipe {
                 ItemStack remaining = ItemStack.of(Objects.requireNonNull(stack.getTag()).getCompound("CoverBlockItem"));
                 list.set(i, remaining);
             } else if (stack.getItem() instanceof BlockItem) {
-                ItemStack remaining = stack.copy();
-                remaining.setCount(1);
-                list.set(i, remaining);
+//                ItemStack remaining = stack.copy();
+//                remaining.setCount(1);
+//                list.set(i, remaining);
             }
         }
 
