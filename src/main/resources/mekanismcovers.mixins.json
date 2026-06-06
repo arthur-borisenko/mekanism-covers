@@ -7,6 +7,7 @@
   "plugin": "dev.lucaargolo.mekanismcovers.CompatMixinPlugin",
   "mixins": [
     "AbstractBlockMixin",
+    "BlockOcclusionMixin",
     "BlockStateBaseMixin",
     "BlockTransmitterMixin",
     "EntityCollisionContextAccessor",
