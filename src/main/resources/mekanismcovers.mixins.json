@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.lucaargolo.mekanismcovers.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "mekanismcovers.refmap.json",
+  "plugin": "dev.lucaargolo.mekanismcovers.CompatMixinPlugin",
+  "mixins": [
+    "AbstractBlockMixin",
+    "BlockStateBaseMixin",
+    "BlockTransmitterMixin",
+    "EntityCollisionContextAccessor",
+    "TileEntityTransmitterMixin"
+  ],
+  "client": [
+    "ClientBlockTransmitterMixin",
+    "MinecraftMixin",
+    "TransmitterBakedModelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
