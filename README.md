@@ -13,6 +13,8 @@ If you want to remove the cover, just break the block, use a Configurator in the
 
 If you're having any crashes or unexpected behavior while using mods that change Minecraft's rendering. Go into the config file located at your .minecraft/config/mekanismcovers.json, and set disableAdvancedCoverRendering to true.
 Some features may be untested while backporting but it should work fine.
+## Known bugs:
+* When OptiFine is installed, cover sides are not rendered behind transparent/non-full blocks.
 ## License
 Distributed under the Mozilla Public License 2.0. See `LICENSE` for more information.
 
